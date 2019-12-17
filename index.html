@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Pizza Lovers Survey Form</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+  <h1 id="title">Pizza Lovers Survey Form</h1>
+  <div id="form-outer">
+    <p id="description">Please fill out the form below to let us know how we did!</p>
+    <form id="survey-form" method="GET">
+      <div class="rowTab">
+        <div class="labels">
+          <label id="name" for="name">*Name: </label>
+        </div>
+        <div class="rightTab">
+          <input autofocus="" type="text" name="name" id="name" class="input-field" placeholder="Enter your name"
+            required="">
+        </div>
+      </div>
+      <div class="rowTab">
+        <div class="labels">
+          <label id="email-label" for="email">*Email: </label>
+        </div>
+        <div class="rightTab">
+          <input autofocus="" type="email" name="email" id="email" class="input-field" placeholder="Enter your email"
+            required="">
+        </div>
+      </div>
+      <div class="rowTab">
+        <div class="labels">
+          <label id="number-label" for="age" required="">*Age: </label>
+        </div>
+        <div class="rightTab">
+          <input autofocus="" type="number" name="age" id="number" min="1" max="125" class="input-field"
+            placeholder="Enter your age" required="">
+        </div>
+      </div>
+      <div class="rowTab">
+        <div class="labels">
+          <label id="currentPos">How do you feel we did?</label>
+        </div>
+        <div class="rightTab">
+          <select id="dropdown" name="currentPos" class="dropdown">
+            <option disabled="" selected="" value="">Select an option</option>
+            <option value="Amazing!">Amazing!</option>
+            <option value="okay">Okay</option>
+            <option value="disappointed">Disappointed</option>
+            <option value="preferNo">Prefer not to say</option>
+          </select>
+        </div>
+      </div>
+      <div class="rowTab">
+        <div class="labels">
+          <label for="userRating">* How likely is that you would recommend <br>Pizza Lovers to a friend?</label>
+        </div>
+        <div class="rightTab">
+          <ul style="list-style: none;">
+            <li class="radio"><label>Definitely<input name="radio-buttons" value="1" type="radio"
+                  class="userRatings"></label></li>
+            <li class="radio"><label>Maybe<input name="radio-buttons" value="2" type="radio"
+                  class="userRatings"></label></li>
+            <li class="radio"><label>Not sure<input name="radio-buttons" value="3" type="radio"
+                  class="userRatings"></label></li>
+          </ul>
+        </div>
+      </div>
+      <div class="rowTab">
+        <div class="labels">
+          <label for="most-like">What do you like most about Pizza Lovers?: </label>
+        </div>
+        <div class="rightTab">
+          <select id="most-like" name="mostLike" class="dropdown">
+            <option disabled="" selected="" value="">Select an option</option>
+            <option value="Pizza">Pizza</option>
+            <option value="Breadsticks">Breadsticks</option>
+            <option value="Wings">Wings</option>
+            <option value="Desserts">Desserts</option>
+          </select>
+        </div>
+      </div>
+      <div class="rowTab">
+        <div class="labels">
+          <label for="preferences">Things that Pizza Lover can improve on in the future<br>(Check all that apply):
+          </label>
+        </div>
+        <div class="rightTab">
+          <ul id="preferences" style="list-style: none;">
+            <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">Customer
+                Service</label></li>
+            <li class="checkbox"><input name="prefer" value="2" type="checkbox" class="userRatings">Menu Display</li>
+            <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings">Table
+                Preparation</label></li>
+            <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRatings">Restaurant
+                Cleanliness</label></li>
+          </ul>
+        </div>
+      </div>
+      <div class="rowTab">
+        <div class="labels">
+          <label for="comments">Any Comments or Suggestions?</label>
+        </div>
+        <div class="rightTab">
+          <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment"
+            placeholder="Enter your comment here..."></textarea>
+        </div>
+      </div>
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+
+</html>
